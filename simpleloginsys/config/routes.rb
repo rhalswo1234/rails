@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
+  root 'simplelogins#index'
   resources :simplelogins do
     collection do
         post 'login'
